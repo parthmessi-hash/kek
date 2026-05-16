@@ -663,7 +663,7 @@ video.event-card__image {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 360px) {
   .hero {
     grid-template-columns: 1fr;
   }
