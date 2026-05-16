@@ -322,6 +322,24 @@ video.event-card__image {
   background: #000;
 }
 
+.past-events-grid {
+  gap: 1rem;
+}
+
+.past-events-grid .event-card__image {
+  aspect-ratio: 4 / 3;
+  max-height: 220px;
+}
+
+.past-events-grid .event-card__body {
+  padding: 1rem;
+  gap: 0.55rem;
+}
+
+.past-events-grid .event-card__title {
+  font-size: 1.02rem;
+}
+
 .event-card__body,
 .team-card__body,
 .news-card__body,
