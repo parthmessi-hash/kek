@@ -2,8 +2,10 @@ const navItems = [
   { label: "HOME", href: "/" },
   { label: "ABOUT US", href: "/about-us/" },
   { label: "PAST EVENTS", href: "/projects/" },
+  { label: "MAKE AN IMPACT", href: "/get-involved/" },
   { label: "UPCOMING EVENTS", href: "/upcoming-events-1/" },
   { label: "PRESS RELEASES", href: "/donate/" },
+  { label: "OUR VOLUNTEERS", href: "/volunteers/" },
   { label: "BLOG", href: "/blog/" },
   { label: "CONTACT US", href: "/contact/" }
 ];
@@ -40,6 +42,10 @@ function renderHeader() {
 
   const nav = host.querySelector("[data-nav]");
   const toggle = nav.querySelector(".site-nav__toggle");
+  if (window.matchMedia("(max-width: 760px)").matches) {
+    nav.classList.add("is-open");
+    toggle.setAttribute("aria-expanded", "true");
+  }
   toggle.addEventListener("click", () => {
     const open = nav.classList.toggle("is-open");
     toggle.setAttribute("aria-expanded", String(open));

@@ -489,6 +489,43 @@ a {
   color: var(--brand-deep);
 }
 
+.impact-intro {
+  display: grid;
+  gap: 1rem;
+}
+
+.impact-card__link {
+  display: block;
+  text-decoration: none;
+}
+
+.impact-card .news-card__image {
+  aspect-ratio: 423 / 324;
+}
+
+.volunteer-card__image {
+  aspect-ratio: 4 / 5.6;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.upcoming-panel {
+  display: flex;
+  justify-content: center;
+  padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+.upcoming-poster {
+  display: block;
+  width: min(100%, 34rem);
+}
+
+.upcoming-poster img {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(58, 41, 28, 0.12);
+}
+
 .site-footer {
   border-top: 1px solid rgba(118, 20, 20, 0.08);
   background: rgba(255, 252, 247, 0.92);
