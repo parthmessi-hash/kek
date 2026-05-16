@@ -161,7 +161,7 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 2rem;
   padding: clamp(1.5rem, 4vw, 3rem);
   align-items: center;
@@ -204,7 +204,7 @@ a {
 .hero__copy {
   display: grid;
   gap: 1.1rem;
-  max-width: 62ch;
+  max-width: 66ch;
 }
 
 .hero__media {
