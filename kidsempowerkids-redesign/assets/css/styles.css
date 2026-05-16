@@ -316,6 +316,12 @@ a {
   aspect-ratio: 16 / 10;
 }
 
+video.event-card__image {
+  width: 100%;
+  display: block;
+  background: #000;
+}
+
 .event-card__body,
 .team-card__body,
 .news-card__body,
