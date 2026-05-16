@@ -161,7 +161,7 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 0.9fr 1.1fr;
   gap: 2rem;
   padding: clamp(1.5rem, 4vw, 3rem);
   align-items: center;
@@ -221,7 +221,7 @@ a {
 
 .hero__media video {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 24px;
   background: #000;
