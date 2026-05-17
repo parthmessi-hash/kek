@@ -109,7 +109,7 @@ a {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  gap: 0.35rem;
+  gap: 0.22rem;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -119,13 +119,13 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.3rem;
-  padding: 0.45rem 0.62rem;
+  min-height: 2.15rem;
+  padding: 0.38rem 0.5rem;
   border-radius: 999px;
   border: 1px solid transparent;
-  font-size: 0.73rem;
+  font-size: 0.66rem;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
@@ -581,6 +581,123 @@ video.event-card__image {
   border-radius: 18px;
 }
 
+.recognitions-grid {
+  align-items: stretch;
+}
+
+.recognition-card {
+  padding: 1rem;
+  background: linear-gradient(180deg, #fffefb, #faf3e7);
+  border: 1px solid rgba(186, 147, 72, 0.38);
+  border-radius: 28px;
+  box-shadow: 0 20px 45px rgba(125, 96, 42, 0.1);
+}
+
+.recognition-card__frame {
+  height: 100%;
+  display: grid;
+  gap: 1.25rem;
+  padding: clamp(1.35rem, 3vw, 2.5rem);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 250, 241, 0.98)),
+    repeating-linear-gradient(
+      45deg,
+      rgba(198, 163, 96, 0.08) 0,
+      rgba(198, 163, 96, 0.08) 6px,
+      rgba(255, 255, 255, 0.45) 6px,
+      rgba(255, 255, 255, 0.45) 12px
+    );
+  border: 10px double rgba(193, 156, 83, 0.72);
+  border-radius: 22px;
+  text-align: center;
+}
+
+.recognition-card__kicker {
+  margin: 0;
+  font-family: "Bitter", Georgia, serif;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  font-style: italic;
+  color: #2b231b;
+}
+
+.recognition-card__org,
+.recognition-card__date {
+  margin: 0;
+  font-family: "Bitter", Georgia, serif;
+  font-size: clamp(1.2rem, 2vw, 1.95rem);
+  color: #2f251a;
+}
+
+.recognition-card__name {
+  margin: 0.5rem 0 0;
+  font-family: "Bitter", Georgia, serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1;
+  color: #231a14;
+  text-transform: uppercase;
+}
+
+.recognition-card__body {
+  margin: 0;
+  color: #3f342a;
+  font-size: 1.08rem;
+  line-height: 1.55;
+}
+
+.recognition-card__footer {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.recognition-card__signature {
+  display: grid;
+  gap: 0.2rem;
+  padding-top: 1rem;
+  min-width: 9rem;
+}
+
+.recognition-card__sign {
+  font-family: "Bitter", Georgia, serif;
+  font-size: 1.45rem;
+  font-style: italic;
+  color: #1f47c4;
+}
+
+.recognition-card__title {
+  color: #352a20;
+  font-size: 0.98rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.recognition-card__seal {
+  width: clamp(5.5rem, 15vw, 8rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 242, 176, 0.92), rgba(222, 188, 74, 0.98) 45%, rgba(164, 123, 34, 1) 100%);
+  box-shadow:
+    inset 0 0 0 10px rgba(181, 136, 33, 0.3),
+    inset 0 0 0 22px rgba(255, 229, 136, 0.2);
+  position: relative;
+}
+
+.recognition-card__seal::before,
+.recognition-card__seal::after {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  border-radius: 50%;
+  border: 2px solid rgba(135, 101, 17, 0.45);
+}
+
+.recognition-card__seal::after {
+  inset: 28%;
+}
+
 .site-footer {
   border-top: 1px solid rgba(118, 20, 20, 0.08);
   background: rgba(255, 252, 247, 0.92);
@@ -623,7 +740,7 @@ video.event-card__image {
   }
 
   .site-nav__list {
-    gap: 0.22rem;
+    gap: 0.14rem;
   }
 
   .hero,
@@ -661,6 +778,11 @@ video.event-card__image {
 
   .hero__media {
     padding: 0.7rem;
+  }
+
+  .recognition-card__footer {
+    flex-direction: column;
+    align-items: center;
   }
 }
 

@@ -6,6 +6,7 @@ const navItems = [
   { label: "UPCOMING EVENTS", href: "/upcoming-events-1/" },
   { label: "PRESS RELEASES", href: "/donate/" },
   { label: "OUR VOLUNTEERS", href: "/volunteers/" },
+  { label: "RECOGNITIONS", href: "/recognitions/" },
   { label: "CONTACT US", href: "/contact/" }
 ];
 
