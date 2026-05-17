@@ -22,10 +22,7 @@ function renderHeader() {
     <header class="site-header">
       <div class="site-header__inner">
         <a class="site-brand" href="/">KIDS EMPOWER KIDS</a>
-        <nav class="site-nav" data-nav>
-          <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav-list">
-            Menu
-          </button>
+        <nav class="site-nav" aria-label="Site">
           <ul class="site-nav__list" id="site-nav-list">
             ${navItems
               .map((item) => {
@@ -38,17 +35,6 @@ function renderHeader() {
       </div>
     </header>
   `;
-
-  const nav = host.querySelector("[data-nav]");
-  const toggle = nav.querySelector(".site-nav__toggle");
-  if (window.matchMedia("(max-width: 760px)").matches) {
-    nav.classList.add("is-open");
-    toggle.setAttribute("aria-expanded", "true");
-  }
-  toggle.addEventListener("click", () => {
-    const open = nav.classList.toggle("is-open");
-    toggle.setAttribute("aria-expanded", String(open));
-  });
 }
 
 function renderFooter() {
