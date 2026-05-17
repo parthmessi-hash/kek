@@ -593,109 +593,13 @@ video.event-card__image {
   box-shadow: 0 20px 45px rgba(125, 96, 42, 0.1);
 }
 
-.recognition-card__frame {
-  height: 100%;
-  display: grid;
-  gap: 1.25rem;
-  padding: clamp(1.35rem, 3vw, 2.5rem);
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 250, 241, 0.98)),
-    repeating-linear-gradient(
-      45deg,
-      rgba(198, 163, 96, 0.08) 0,
-      rgba(198, 163, 96, 0.08) 6px,
-      rgba(255, 255, 255, 0.45) 6px,
-      rgba(255, 255, 255, 0.45) 12px
-    );
-  border: 10px double rgba(193, 156, 83, 0.72);
-  border-radius: 22px;
-  text-align: center;
-}
-
-.recognition-card__kicker {
-  margin: 0;
-  font-family: "Bitter", Georgia, serif;
-  font-size: clamp(1.7rem, 3vw, 2.5rem);
-  font-style: italic;
-  color: #2b231b;
-}
-
-.recognition-card__org,
-.recognition-card__date {
-  margin: 0;
-  font-family: "Bitter", Georgia, serif;
-  font-size: clamp(1.2rem, 2vw, 1.95rem);
-  color: #2f251a;
-}
-
-.recognition-card__name {
-  margin: 0.5rem 0 0;
-  font-family: "Bitter", Georgia, serif;
-  font-size: clamp(2.5rem, 4vw, 4rem);
-  line-height: 1;
-  color: #231a14;
-  text-transform: uppercase;
-}
-
-.recognition-card__body {
-  margin: 0;
-  color: #3f342a;
-  font-size: 1.08rem;
-  line-height: 1.55;
-}
-
-.recognition-card__footer {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-.recognition-card__signature {
-  display: grid;
-  gap: 0.2rem;
-  padding-top: 1rem;
-  min-width: 9rem;
-}
-
-.recognition-card__sign {
-  font-family: "Bitter", Georgia, serif;
-  font-size: 1.45rem;
-  font-style: italic;
-  color: #1f47c4;
-}
-
-.recognition-card__title {
-  color: #352a20;
-  font-size: 0.98rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.recognition-card__seal {
-  width: clamp(5.5rem, 15vw, 8rem);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 30% 30%, rgba(255, 242, 176, 0.92), rgba(222, 188, 74, 0.98) 45%, rgba(164, 123, 34, 1) 100%);
-  box-shadow:
-    inset 0 0 0 10px rgba(181, 136, 33, 0.3),
-    inset 0 0 0 22px rgba(255, 229, 136, 0.2);
-  position: relative;
-}
-
-.recognition-card__seal::before,
-.recognition-card__seal::after {
-  content: "";
-  position: absolute;
-  inset: 12%;
-  border-radius: 50%;
-  border: 2px solid rgba(135, 101, 17, 0.45);
-}
-
-.recognition-card__seal::after {
-  inset: 28%;
+.recognition-card__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  border: 1px solid rgba(193, 156, 83, 0.42);
+  box-shadow: 0 12px 30px rgba(125, 96, 42, 0.12);
 }
 
 .site-footer {
@@ -778,11 +682,6 @@ video.event-card__image {
 
   .hero__media {
     padding: 0.7rem;
-  }
-
-  .recognition-card__footer {
-    flex-direction: column;
-    align-items: center;
   }
 }
 
