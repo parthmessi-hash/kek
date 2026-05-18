@@ -23,7 +23,10 @@ function renderHeader() {
     <header class="site-header">
       <div class="site-header__inner">
         <a class="site-brand" href="/">KIDS EMPOWER KIDS</a>
-        <nav class="site-nav" aria-label="Site">
+        <nav class="site-nav" aria-label="Site" data-nav>
+          <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav-list">
+            Menu
+          </button>
           <ul class="site-nav__list" id="site-nav-list">
             ${navItems
               .map((item) => {
@@ -36,6 +39,28 @@ function renderHeader() {
       </div>
     </header>
   `;
+
+  const nav = host.querySelector("[data-nav]");
+  const toggle = host.querySelector(".site-nav__toggle");
+  const mobileQuery = window.matchMedia("(max-width: 860px)");
+
+  function syncNavState() {
+    if (mobileQuery.matches) {
+      nav.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+    } else {
+      nav.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+    }
+  }
+
+  toggle.addEventListener("click", () => {
+    const open = nav.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+
+  mobileQuery.addEventListener("change", syncNavState);
+  syncNavState();
 }
 
 function renderFooter() {
