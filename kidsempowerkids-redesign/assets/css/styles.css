@@ -541,6 +541,10 @@ video.event-card__image {
   border: 4px solid rgba(155, 28, 28, 0.08);
 }
 
+.volunteer-card__image--yashi {
+  object-position: center 24%;
+}
+
 .volunteer-card .team-card__body {
   padding-top: 1rem;
   text-align: center;
