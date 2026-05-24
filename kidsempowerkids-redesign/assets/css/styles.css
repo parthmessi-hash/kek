@@ -542,7 +542,9 @@ video.event-card__image {
 }
 
 .volunteer-card__image--yashi {
-  object-position: center 8%;
+  object-position: center 4%;
+  transform: scale(1.18);
+  transform-origin: center top;
 }
 
 .volunteer-card .team-card__body {
