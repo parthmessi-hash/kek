@@ -2,11 +2,12 @@ const navItems = [
   { label: "HOME", href: "/" },
   { label: "ABOUT US", href: "/about-us/" },
   { label: "PAST EVENTS", href: "/projects/" },
-  { label: "MAKE AN IMPACT", href: "/get-involved/" },
+  { label: "ONGOING EVENTS", href: "/get-involved/" },
   { label: "UPCOMING EVENTS", href: "/upcoming-events-1/" },
   { label: "PRESS RELEASES", href: "/donate/" },
   { label: "OUR VOLUNTEERS", href: "/volunteers/" },
   { label: "RECOGNITIONS", href: "/recognitions/" },
+  { label: "MAKE A DIFFERENCE", href: "/make-a-difference/" },
   { label: "CONTACT US", href: "/contact/" }
 ];
 
@@ -69,8 +70,13 @@ function renderFooter() {
   host.innerHTML = `
     <footer class="site-footer">
       <div class="site-footer__inner">
-        &copy; 2024 Kids Empower Kids. Powered and secured by
-        <a href="https://wix.com/?utm_campaign=vir_created_with" target="_blank" rel="noreferrer noopener">Wix</a>
+        <div class="site-footer__social">
+          <a href="https://www.instagram.com/p/DYTartFu4cY/#" target="_blank" rel="noreferrer noopener">@kids.empower.kids</a>
+        </div>
+        <div>
+          &copy; 2024 Kids Empower Kids. Powered and secured by
+          <a href="https://wix.com/?utm_campaign=vir_created_with" target="_blank" rel="noreferrer noopener">Wix</a>
+        </div>
       </div>
     </footer>
   `;
