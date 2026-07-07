@@ -121,11 +121,11 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.35rem;
-  padding: 0.42rem 0.56rem;
+  min-height: 2.7rem;
+  padding: 0.48rem 0.7rem;
   border-radius: 999px;
   border: 1px solid transparent;
-  font-size: 0.93rem;
+  font-size: 1.12rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -660,8 +660,9 @@ video.event-card__image {
   }
 
   .site-nav__link {
-    padding: 0.42rem 0.46rem;
-    font-size: 0.89rem;
+    min-height: 2.55rem;
+    padding: 0.44rem 0.52rem;
+    font-size: 1.02rem;
   }
 }
 
@@ -720,9 +721,9 @@ video.event-card__image {
 
   .site-nav__link {
     width: 100%;
-    min-height: 3rem;
-    padding: 0.7rem 1rem;
-    font-size: 1.09rem;
+    min-height: 3.2rem;
+    padding: 0.78rem 1rem;
+    font-size: 1.2rem;
     letter-spacing: 0.05em;
   }
 
