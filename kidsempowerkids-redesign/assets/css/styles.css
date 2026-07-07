@@ -121,13 +121,13 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.7rem;
-  padding: 0.48rem 0.7rem;
+  min-height: 3.15rem;
+  padding: 0.58rem 0.82rem;
   border-radius: 999px;
   border: 1px solid transparent;
-  font-size: 1.12rem;
+  font-size: 1.68rem;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
@@ -660,9 +660,9 @@ video.event-card__image {
   }
 
   .site-nav__link {
-    min-height: 2.55rem;
-    padding: 0.44rem 0.52rem;
-    font-size: 1.02rem;
+    min-height: 3rem;
+    padding: 0.52rem 0.62rem;
+    font-size: 1.45rem;
   }
 }
 
@@ -721,9 +721,9 @@ video.event-card__image {
 
   .site-nav__link {
     width: 100%;
-    min-height: 3.2rem;
-    padding: 0.78rem 1rem;
-    font-size: 1.2rem;
+    min-height: 3.6rem;
+    padding: 0.9rem 1rem;
+    font-size: 1.42rem;
     letter-spacing: 0.05em;
   }
 
