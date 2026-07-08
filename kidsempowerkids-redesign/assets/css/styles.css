@@ -643,7 +643,16 @@ video.event-card__image {
 }
 
 .site-footer__social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   text-decoration: none;
+}
+
+.site-footer__social svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex: 0 0 auto;
 }
 
 .spacer-top {

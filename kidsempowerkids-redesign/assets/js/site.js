@@ -70,7 +70,14 @@ function renderFooter() {
     <footer class="site-footer">
       <div class="site-footer__inner">
         <div class="site-footer__social">
-          <a href="https://www.instagram.com/p/DYTartFu4cY/#" target="_blank" rel="noreferrer noopener">@kids.empower.kids</a>
+          <a href="https://www.instagram.com/p/DYTartFu4cY/#" target="_blank" rel="noreferrer noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
+              <circle cx="12" cy="12" r="4.25" fill="none" stroke="currentColor" stroke-width="2"></circle>
+              <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"></circle>
+            </svg>
+            <span>@kids.empower.kids</span>
+          </a>
         </div>
         <div>
           &copy; 2024 Kids Empower Kids. Powered and secured by
