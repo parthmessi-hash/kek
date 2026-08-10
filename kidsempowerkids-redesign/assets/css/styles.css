@@ -581,9 +581,28 @@ video.event-card__image {
 .press-card {
   padding: 1rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.6rem;
+  background: #fff;
+}
+
+.press-card__label {
+  align-self: flex-start;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  min-width: 2rem;
+  min-height: 2rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: var(--brand);
+  color: #fff;
+  font-family: "Bitter", Georgia, serif;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
 }
 
 .press-card .news-card__image {
