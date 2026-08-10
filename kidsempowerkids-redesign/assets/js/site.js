@@ -3,7 +3,7 @@ const navItems = [
   { label: "ABOUT US", href: "/about-us/" },
   { label: "PAST EVENTS", href: "/projects/" },
   { label: "EVENTS & OPPORTUNITIES", href: "/events-opportunities/" },
-  { label: "PRESS RELEASES", href: "/donate/" },
+  { label: "MEDIA", href: "/donate/" },
   { label: "OUR VOLUNTEERS", href: "/volunteers/" },
   { label: "RECOGNITIONS", href: "/recognitions/" },
   { label: "MAKE A DIFFERENCE", href: "/make-a-difference/" },
