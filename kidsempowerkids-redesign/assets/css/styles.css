@@ -567,6 +567,13 @@ video.event-card__image {
   padding: clamp(1rem, 3vw, 1.5rem);
 }
 
+.upcoming-grid {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 .upcoming-poster {
   display: block;
   width: min(100%, 24rem);
