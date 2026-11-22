@@ -328,6 +328,10 @@ video.event-card__image {
   background: #000;
 }
 
+video.event-card__image--contain {
+  object-fit: contain;
+}
+
 .past-events-grid {
   gap: 1rem;
 }
@@ -614,6 +618,15 @@ video.event-card__image {
   font-size: 1rem;
   font-weight: 800;
   line-height: 1;
+}
+
+.press-card__link {
+  display: grid;
+  gap: 0.75rem;
+  width: 100%;
+  color: var(--brand-deep);
+  font-weight: 700;
+  text-align: center;
 }
 
 .press-card .news-card__image {
